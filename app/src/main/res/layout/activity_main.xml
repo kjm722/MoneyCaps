@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="2"
+        android:background="#6879D8"
+        app:title="유저명"
+        app:titleTextColor="@color/white">
+        <ImageView
+            android:layout_width="86dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:src="@drawable/baseline_account_box_24" />
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.5"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <ImageButton
+                    android:id="@+id/btnDate"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginRight="50dp"
+                    android:src="@drawable/time"
+                    />
+                <ImageButton
+                    android:id="@+id/btnLock"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/lock"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+                <ImageButton
+                    android:id="@+id/btnCall"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginRight="50dp"
+                    android:src="@drawable/call"/>
+
+                <ImageButton
+                    android:id="@+id/btnCctv"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/cctv"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="고객센터 연결하기"
+        android:gravity="center"/>
+
+</LinearLayout>

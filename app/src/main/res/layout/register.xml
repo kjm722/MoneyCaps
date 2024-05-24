@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="3"
+        android:src="@drawable/baseline_account_box_24"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:layout_margin="50dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="이름" />
+        <EditText
+            android:id="@+id/rgName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="이름을 입력하세요"
+            android:inputType="text"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="전화번호" />
+        <EditText
+            android:id="@+id/rgPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="전화번호를 입력하세요"
+            android:inputType="phone"
+            android:ems="10"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="이메일" />
+        <EditText
+            android:id="@+id/rgEm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="이메일을 입력하세요"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="비밀번호" />
+
+        <EditText
+            android:id="@+id/rgPw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="비밀번호를 입력하세요"
+            android:inputType="textPassword"
+            android:ems="10"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/rgBack"
+            android:layout_width="150sp"
+            android:layout_height="80dp"
+            android:layout_marginRight="4dp"
+            android:text="뒤로가기"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/rgSu"
+            android:layout_width="150sp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="4dp"
+            android:text="가입완료"
+            android:textSize="25dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>
